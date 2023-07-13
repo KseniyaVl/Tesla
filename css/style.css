@@ -1,0 +1,832 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #000;
+}
+.container {
+    width: 1440px;
+    margin: 0 auto;
+
+}
+nav {
+    display: flex;
+    margin: 24px 60px 55px 43px;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_1, .menu_2 {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+}
+.menu_2 .menu__item {
+    margin: 0 30px;  
+}
+.store:first-child {
+    margin-right: 0;
+}
+.menu_1 {
+    padding-left: 67px;
+}
+.menu__item:hover, .menu__item.active {
+    border-bottom: 2px solid #E51937;
+    color: #E51937;
+}
+.menu__item {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+    padding-bottom: 6px;
+    color: #000;
+    border-bottom: 2px solid transparent;
+    transition: .2s;
+}
+.item1 {
+    margin-right: 63px;
+}
+.item2 {
+    margin-right: 25px;
+}
+.item3 {
+    margin-right: 44px;   
+}
+.item4 {
+    margin-right: 46px;    
+}
+.tesla_title {
+    background-image: url(../img/Tesla\ logo\ +\ car.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 594px;
+    text-align: center;
+    margin-bottom: 26px;
+}
+.tesla_title h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 110px;
+}
+.tesla_title p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 2px;
+    margin: 0;
+}
+.tesla_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+}
+.info_block {
+    display: flex;
+    align-items: center;
+    margin-right: 81px;
+}
+.info_block_img {
+    width: 46px;
+    margin-right: 5px;
+}
+.info_block_text1 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 40px;
+    margin-right: -10px;
+    margin-bottom: 0;
+}
+.info_block_text1 span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    vertical-align: middle;
+}
+.info_block_text2 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+.test-drive {
+    max-height: 22px;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 40px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+.testdrive_img {
+    margin-right: 11px;
+    margin-left: 15px;
+}
+.order {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E51937;
+    border: 2px solid #E51937;
+    min-width: 160px;
+    min-height: 40px;
+    cursor: pointer;
+}
+.go_bottom {
+    text-align: center;
+    display: block;
+}
+@media (max-width:768px) and (min-width:376px) {
+    .container {
+        max-width: 768px;
+    }
+    .menu__item {
+        display: none;
+    }
+    .menu_2 img{
+        width: 35px;
+    }
+ .tesla_title {
+        margin: 55px;
+        margin-bottom: 20px;
+        min-height: 533px;
+        min-width: 672px;
+        background-size: 145%;
+        background-position: center bottom;
+    } 
+    .tesla_info {
+        flex-wrap: wrap;
+        margin-bottom: 64px;
+    }
+    nav {
+        margin: 24px 33px 94px 15px;
+        margin-bottom: 84px;
+    }
+    .tesla_title h1 {
+        font-size: 90px;
+        line-height: 94px;
+        padding-right: 15px;
+    }
+    .tesla_title p {
+        font-size: 15px;
+        line-height: 18px;
+        padding-right: 15px;
+    }
+
+    .info_block {
+        margin-right: 60px;
+        margin-bottom: 55px;
+        margin-left: 70px;
+    }
+    .info_block.img:nth-child(2) {
+        margin-left: 0;
+        max-width:200px;
+    }
+    .info_block:nth-child(2) .info_block img {
+        width: 38px;
+    }
+    .info_block img {
+        width: 65px;
+    }
+    .info_block_text1 {
+        font-size: 50px;
+        line-height: 61px;
+        margin-bottom: 1.4px;
+    }
+    .info_block_text1 span{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 1.4px;
+    }
+    .info_block_text2 {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .test-drive img {
+        display: none;
+    }
+    .test-drive::before {
+        content: url(../img/steering-wheel_red.png);
+        margin-top: -7px;
+        margin-right: 9px;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+    }
+    .test-drive {
+        font-size: 16px;
+        line-height: 16px;
+        color: #E51937;
+        margin-right: 37px;
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .order {
+        width: 220px;
+        height: 55px;
+        font-size: 16px;
+        background: #E51937;
+        color: #fff;
+        line-height: 53px;
+    }
+}
+@media screen and (max-width:375px) {
+    .container {
+        max-width: 375px;
+    }
+    .menu__item {
+        display: none;
+    }
+    .menu_2 img{
+        margin: 0 14px;
+        width: 24px;
+        height: 15px;
+    }
+    .logo img {
+        width: 138px;
+        height: 42px;
+    }
+    nav {
+        margin: 3px 0 25px 12px;
+    }
+    .tesla_title {
+        margin: 0px;
+        margin-bottom: 9px;
+        margin-left: 9px;
+        min-height: 300px;
+        min-width: 357px;
+        background-size: 140%;
+        background-position: center bottom;
+    } 
+    .tesla_title h1 {
+        width: 375px;
+        font-size: 50px;
+        line-height: 61px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .tesla_title p {
+        width: 375px;
+        font-size: 10px;
+        line-height: 12px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .tesla_info {
+        flex-wrap: wrap;
+        margin-bottom: 32px;
+    }
+    .info_block {
+        margin: 0 30px;
+        margin-bottom: 36px;
+    }
+    .info_block.img:nth-child(2) {
+        margin-left: 0;
+        max-width:200px;
+    }
+    .info_block:nth-child(2) .info_block img {
+        width: 38px;
+    }
+    .info_block img {
+        width: 38px;
+    }
+    .info_block_text1 {
+        font-size: 27px;
+        line-height: 33px;
+        margin-bottom: 0;
+    }
+    .info_block_text1 span{
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 0;
+    }
+    .info_block_text2 {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .test-drive img {
+        display: none;
+    }
+    .test-drive::before {
+        content: url(../img/steering-wheel_red.png);
+        margin-top: -7px;
+        margin-right: 25px;
+        width: 22px;
+        height: 22px;
+    }
+    .test-drive {
+        width: 160px;
+        font-size: 13px;
+        line-height: 16px;
+        color: #E51937;
+        margin-right: 0px;
+        margin-left: 0;
+    }
+    .order {
+        width: 160px;
+        height: 40px;
+        font-size: 13px;
+        line-height: 36px;
+        background: #E51937;
+        color: #fff;
+        line-height: 37px;
+    }
+
+}
+/* Main */
+.main {
+    color: #fff;
+    margin-top: 37px;
+}
+.main__inner {
+    display: flex;
+  /*------- было 100%*/  width: 1440px;
+    background-image: url(../img/2013-tesla-model-s-cockpit.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+}
+.left-section h2 {
+    margin-left: 80px;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 85px;
+    color: #E51937;
+}
+.right-section {
+    width: 440px;
+    background: #E51937;
+    padding: 51px 50px 63px 52px;
+}
+.main-top h3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin: 0;
+    padding: 0;
+}
+.main-top p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    margin-top: 11px;
+    margin-bottom: 54px;
+}
+/*--*/.features-box {margin: 0;padding: 0; width: 269px;}
+
+.features {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+
+}
+.features__img {
+    align-self: center;
+    margin-right: 19px;
+}
+.features__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+}
+.features__accent {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+}
+.features__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0;
+}
+.main-bottom {
+    display: flex;
+    margin-top: 141px;
+}
+.information {
+    display: flex;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    align-items: center;
+    margin-right: 15px;
+}
+.information img {
+    margin-right: 10px;
+    align-self: center;
+}
+.information a {
+    text-decoration: none;
+    color: inherit;
+}
+.inverse__button {
+    color: #fff;
+    border-color: #fff;
+}
+@media (max-width:768px) and (min-width:376px) {
+    .main {
+        height: auto;
+
+    }
+   .main__inner {
+        flex-direction: column;
+        height: 100%;
+     /*--*/   max-width: 768px;
+   } 
+   .left-section {
+        height: 500px;
+   }
+   .left-section h2 {
+        text-align: right;
+        margin: 0 58px 0 0;
+   }
+   .right-section {
+        width: 100%;
+        display: flex;
+        padding: 51px 50px 50px 34px;
+        flex-direction: column;
+   }
+   .features {
+    margin-bottom: 21px;
+   }
+   .main-top-inner {
+        display: flex;
+   }
+   .main-top {
+        width: 320px;
+        margin-right: 70px;
+   }
+   .features-box {
+        width: 235px;
+   }
+   .main-bottom {
+        margin-top: 0;
+        text-align: center;
+        justify-content: center;
+   }
+   .information a {
+        margin-right: 36px;
+        font-size: 16px;
+        line-height: 20px;
+   }
+   .order {
+        font-size: 16px;
+        line-height: 52px;
+   }
+}
+@media (max-width:375px) {
+    .main {
+        min-height: 500px;
+    }
+    .right-section {
+        background-image: url(../img/2013-tesla-model-s-cockpit.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding-top: 337px;
+        padding: 265px 24px 0 30px;
+        max-width: 375px;
+    }
+    .main__inner {
+        height: 337px;
+        flex-direction: column;
+        /*--*/ width: 375px;
+
+    }
+    .main-top p {
+        margin: 0;
+        padding: 9px 0 30px 0;
+        margin-bottom: 7px;
+    }
+    .left-section h2, .features-box, .main-bottom {
+        display: none;
+    } 
+}
+    /*Подвал*/
+    
+.footer__inner {
+    display: flex;
+}
+.footer__left {
+    background-color: #E51937;
+    color:#fff;
+    width: 440px;
+}
+.footer__left-head h3 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    padding: 51px 68px 12px 56px;
+}
+.footer__left-head p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    padding-left: 56px;
+    padding-right: 68px;
+}
+.footer__left-body h3 {
+    margin: 0;
+    padding: 49px 121px 26px 56px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+}
+.footer__img {
+    position: absolute;
+    top: 223px;
+    left: -90px;
+}
+.footer__model-text {
+   /*--*/ width: 821px;
+    font-weight: 600;
+    font-size: 200px;
+    line-height: 244px;
+    color: #E51937;
+    opacity: 0.1;
+    top: 97px;
+    position: absolute;
+    /*--*/left: 180px;
+}
+.rating {
+    display: flex;
+    margin-left: 56px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 93px;
+}
+.rating__add {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+.footer__left-bottom {
+    margin-top: 111px;
+    margin-left: 66px;
+}
+.footer__left-bottom .features {
+    margin-bottom: 51px;
+}
+.footer__left-bottom .features__text-box {
+    margin-left: 23px;
+}
+.footer__left-bottom .features__title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 61px;
+}
+.footer__left-bottom .main-bottom {
+    margin: 0 55px 60px -28px;
+}
+.footer__left-bottom .features__text {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+}
+.footer__left-bottom .information {
+    margin-right: 32px;
+}
+.footer__right {
+    position: relative;
+}
+.footer__info {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 15px;
+    color: #000;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+}
+.footer__info img {
+    align-self: center;
+}
+.footer__info.item-1 {
+    left: 174px;
+    top: 223px;
+    width: 172px;
+}
+.footer__info.item-2 {
+    left: 453px;
+    top: 176px;
+    width: 173px;
+}
+.footer__info.item-3 {
+    left: 508px;
+    top: 590px;
+    align-items: flex-end;
+    width: 240px;
+}
+@media (max-width:768px) and (min-width:376px) {
+    .footer__inner {
+        flex-direction: column;
+    }
+    .footer__right {
+        order: 1;
+        height: 537px;
+    }
+    .footer__left {
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+        width: 768px;
+    }
+    .footer__left-bottom .features {
+        display: none;
+    }
+    .footer__left-head {
+        width: 316px;
+    }
+    .footer__img {
+        top: 114px;
+        left: -16px;
+        width: 750px;
+    }
+    .footer__model-text {
+        top: 37px;
+        left: 82px;
+        font-size: 148px;
+        line-height: 180px;  
+        width: 665px;  
+    }
+    .footer__info {
+        font-size: 15px;
+        line-height: 13px;
+    }
+    .footer__info.item-1 img {
+        height: 193px;
+    }
+    .footer__info.item-1 {
+        left: 173px;
+        top: 120px;
+        width: 123px;
+    }
+    .footer__info.item-2 img {
+        height: 87px;
+    }
+    .footer__info.item-2 {
+        left: 372px;
+        top: 87px;
+        width: 124px;
+    }
+    .footer__info.item-3 img {
+        height: 77px;
+    }
+    .footer__info.item-3 {
+        left: 412px;
+        top: 375px;
+        width: 167px;
+    }
+    .footer__left-head, .footer__left-body {
+        width: 50%;
+    }
+    .footer__left-head h3 {
+        font-size: 30px;
+        line-height: 37px;
+        padding: 62px 0px 12px 34px;
+    }
+    .footer__left-head p {
+        margin: 0;
+        padding-left: 34px;
+        padding-right: 0;
+        font-size: 15px;
+        line-height: 21px;
+        width: 350px;
+        height: 134px;
+    }
+    .footer__left-body h3 {
+        padding: 62px 83px 29px 0px;
+        font-size: 30px;
+        line-height: 37px;
+        width: 346px;
+    }
+    .rating {
+        margin: 0;
+        margin-right: 55px;
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 16px;
+    }
+    .rating__add {
+        font-size: 10px;
+        line-height: 12px;
+        line-height: 16px;
+    }
+    .footer__left-bottom .main-bottom {
+        margin: 0 55px 63px 55px;
+    }
+    .footer__left-bottom .information {
+        margin-right: 36px;
+    }
+}
+@media (max-width:375px) {
+    .footer__inner {
+        flex-direction: column;
+    }
+    .footer__left-body, .footer__left-bottom  {
+        display: none;
+    }
+    .footer__right {
+        order: 1;
+        height: 345px; 
+    }
+    .footer__left {
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+        width: 375px;
+    }
+    .footer__img {
+        top: 122px;
+        left: -2px;
+        width: 361px;
+    }
+    .footer__info.item-1 img {
+        height: 93px;
+    }
+    .footer__info.item-1 {
+        left: 89px;
+        top: 125px;
+        width: 60px;
+    }
+    .footer__info.item-2 img {
+        height: 42px;
+    }
+    .footer__info.item-2 {
+        left: 185px;
+        top: 109px;
+        width: 59px;
+    }
+    .footer__info.item-3 img {
+        height: 37px;
+    }
+    .footer__info.item-3 {
+        left: 204px;
+        top: 248px;
+        width: 80px;
+    }
+    .footer__model-text {
+        top: 60px;
+        left: -7px;
+        font-size: 100px;
+        line-height: 122px;
+        width: 375px; 
+        letter-spacing: -.051em;
+    }
+    .footer__info {
+        font-size: 7px;
+        line-height: 6px;
+    }
+    /* .footer__left-head { /*?????????????? см ниже
+        width: 316px;
+
+    } */
+    .footer__left-head {
+        width: 100%;
+        height: 265px;
+    }
+    .footer__left-head h3 {
+        font-size: 30px;
+        line-height: 37px;
+        padding: 18px 17px 11px 30px;
+    }
+    .footer__left-head p {
+        margin: 0;
+        padding: 0 6px 11px 30px;
+        font-size: 15px;
+        line-height: 18px;
+        width: 350px;
+        height: 150px;
+    }
+
+    
+}
